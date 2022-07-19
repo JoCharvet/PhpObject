@@ -2,7 +2,7 @@
 /**
  * Class Abeille extends animal
  * 
- * define all global attributes/comportments of an Abeille and check if the food correspond to 'nectar'
+ * define all attributes/comportments of an Abeille and check if the food correspond to 'nectar'
  * @author Johnny Charvet <charvetjohnny@outlook.fr>
  */
 class Abeille extends Animal
