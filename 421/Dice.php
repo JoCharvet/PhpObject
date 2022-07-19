@@ -1,7 +1,7 @@
 <?php 
 /**
  * 
- * Class Dice , Used for play a round, any player have 
+ * Class Dice , Used for play a round, any player have three dices
  * 
  */
 class Dice
@@ -44,6 +44,6 @@ class Dice
     // $dice = new dice();
     // echo $dice;
     // echo $dice->getValue();
-?>
+
 
 

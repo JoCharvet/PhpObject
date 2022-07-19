@@ -31,7 +31,7 @@ class Ustensile
      */
     public function getName() : string 
     {
-        return $this->name;
+        return $this->ustensileName;
     }
 }
 

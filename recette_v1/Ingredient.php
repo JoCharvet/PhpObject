@@ -90,23 +90,36 @@ class Ingredient
      */
     function addUstensile(Ustensile $_ustensile)
     {
-        array_push($this->ustensiles,$_ustensile); 
+        $this->ustensiles[$_ustensile->getName()] = $_ustensile;
     }
 
-    
+    /**
+     * Used for displaying any Ustensile useful with the Ingredient
+     *
+     */
     function displayUstensile()
     {
+        $i=0;
         foreach($this->ustensiles as $value)
-        {
-            echo $value->getName().PHP_EOL;
+        {   
+            echo $i++.' : '.$value->getName().PHP_EOL;            
         }
     }
 
-    function deleteUstensile(string $_indexToDelete)
+    /**
+     * Used for delete one Ustensil in the Ustensil list of an Ingredient
+     *
+     * @param integer $_indexToDelete the index of the Ustensile to delete
+     */
+    function deleteUstensile(int $_indexToDelete)
     {
         unset($this->ustensiles[$_indexToDelete]);
     }
 
+    /**
+     * Delete all the ustensile list of the Ingredient
+     *
+     */
     function deleteAll()
     {
         $this->ustensiles = [];
