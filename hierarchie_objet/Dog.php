@@ -21,8 +21,7 @@ abstract class Dog extends Animal
      */
     function __construct(string $_name)
     {
-        parent::__construct('Chien');
-        parent::setShout('J\'aboie');
+        parent::__construct('Chien','J\'aboie');
         $this->name=$_name;
     }
 

@@ -20,6 +20,6 @@ class Herbivore extends Animal
      */
     function eat(string $_food):void
     {
-        (in_array($_food,$this->veggie))? parent::eat($_food):parent::dontEat();
+        (in_array($_food,$this->veggie))? Animal::eat($_food):parent::dontEat();
     }
 }

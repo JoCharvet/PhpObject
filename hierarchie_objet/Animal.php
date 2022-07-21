@@ -18,34 +18,36 @@ abstract class Animal
      * @example parent::__construct('Girafe'); , Only used by the constructor of childrens class.
      * @author Johnny Charvet <charvetjohnny@outlook.fr>
      */
-    function __construct(string $_specie)
+     protected function __construct(string $_specie, string $_shout='Je crie', string $_move='Je me deplace')
     {
         $this->specie=$_specie;
-    }
-
-    /**
-     * Used for set the shout of the animal
-     *
-     * @param string $_shout the shout needed
-     * @example parent::setshout('mew'); , only used by children class.
-     * @author Johnny Charvet <charvetjohnny@outlook.fr>
-     */
-    protected function setShout(string $_shout):void
-    {
         $this->shout=$_shout;
-    }
-
-    /**
-     * Used for set the move of the animal
-     *
-     * @param string $_move the move needed
-     * @example parent::setMove('flying'); , only used by children class.
-     * @author Johnny Charvet <charvetjohnny@outlook.fr>
-     */
-    protected function setMove(string $_move):void
-    {
         $this->move=$_move;
     }
+
+    // /**
+    //  * Used for set the shout of the animal
+    //  *
+    //  * @param string $_shout the shout needed
+    //  * @example parent::setshout('mew'); , only used by children class.
+    //  * @author Johnny Charvet <charvetjohnny@outlook.fr>
+    //  */
+    // protected function setShout(string $_shout):void
+    // {
+    //     $this->shout=$_shout;
+    // }
+
+    // /**
+    //  * Used for set the move of the animal
+    //  *
+    //  * @param string $_move the move needed
+    //  * @example parent::setMove('flying'); , only used by children class.
+    //  * @author Johnny Charvet <charvetjohnny@outlook.fr>
+    //  */
+    // protected function setMove(string $_move):void
+    // {
+    //     $this->move=$_move;
+    // }
 
     /**
      * Used to get the species of the animal

@@ -9,14 +9,13 @@ class Cheval extends Herbivore
 {
     /**
      * Constructor of Cheval
-     * Use the parent construct to define the specie and set the shout
+     * Use the parent construct to define the specie and the shout
      * @example $horse = new Cheval(); for create a new horse
      * @author Johnny Charvet <charvetjohnny@outlook.fr>
      */
     function __construct()
     {
-        parent::__construct('Cheval');
-        parent::setShout('Je hennis');
+        parent::__construct('Cheval',' je hennis');    
     }
     
     /**
@@ -28,6 +27,6 @@ class Cheval extends Herbivore
      */
     function eat(string $_food):void
     {
-        ($_food === 'herbe'||$_food==='foin')?parent::eat($_food) : parent::dontEat();
+        ($_food === 'herbe'||$_food==='foin')?Animal::eat($_food) : parent::dontEat();
     }
 }

@@ -8,6 +8,7 @@
  */
 class Labrador extends Dog
 {
+    private bool $rand=false;
     /**
      * Call the parent constructor
      *
@@ -29,7 +30,6 @@ class Labrador extends Dog
      */
     function move() :void{
 
-        
         if($this->rand)
         {
             parent::move();

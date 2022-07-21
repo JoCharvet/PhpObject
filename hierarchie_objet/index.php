@@ -15,14 +15,14 @@ Autoloader::register();
 
 // ---------------LABRADOR
 
-// $labrador = new Labrador('Médor');
-// echo $labrador->getName();
-// $labrador->move();
-// $labrador->move();
-// $labrador->move();
-// $labrador->eat('patée');
-// $labrador->eat('croquettes');
-// $labrador->shout();
+$labrador = new Labrador('Médor');
+echo $labrador->getName();
+$labrador->move();
+$labrador->move();
+$labrador->move();
+$labrador->eat('patée');
+$labrador->eat('croquettes');
+$labrador->shout();
 
 //---------------PINSCHER
 
@@ -39,9 +39,9 @@ Autoloader::register();
 
 //-------------- GIRAFE
 
-$gigi = new Girafe();
-$gigi->eat('feuille');
-$gigi->eat('caillou');
-$gigi->shout();
-$gigi->move();
+// $gigi = new Girafe();
+// $gigi->eat('feuille');
+// $gigi->eat('caillou');
+// $gigi->shout();
+// $gigi->move();
 
