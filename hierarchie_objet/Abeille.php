@@ -16,9 +16,7 @@ class Abeille extends Animal
      */
     function __construct()
     {
-        parent::__construct('Abeille');
-        parent::setMove('Je me deplace en volant.');
-        parent::setShout('Je bourdonne');
+        parent::__construct('Abeille','Je bourdonne','Je me deplace en volant.');
         
     }
     /**
